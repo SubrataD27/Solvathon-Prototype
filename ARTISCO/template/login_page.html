@@ -1,0 +1,226 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static%}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOGIN</title>
+</head>
+<body style="background-image: url('{%static 'gietbackground.jpeg.jpg'%}');">
+   <center>
+        <div class="container" id="first">
+       <img src="{% static 'f1.png' %}" alt="gietlogo" width="49%" style="position: relative; bottom: 50px;" id="ok">
+       <h3 style="position: relative; bottom: 40px; letter-spacing: 5px;">ARTISCO</h3>
+       
+
+       <div id="ab">
+        <input type="text" maxlength="15" placeholder="Enter Your ID" style="padding: 9px; width: 200px; border-top-right-radius:14px;border-bottom-right-radius: 14px; caret-color:aqua;"><img src="{%static 'id-card-clip-solid.svg'%}" width="20px" style="position: relative; bottom: 29px;left: 100px;">
+         <input type="password" maxlength="15"  placeholder="Enter Your Password" style="padding: 9px; width: 200px; position: relative; top:20px;border-top-right-radius: 14px;border-bottom-right-radius: 14px;caret-color: aqua;"><img src="{%static 'key-solid.svg'%}" width="20px" style="position: relative; bottom: 8px;left: 185px;">
+         <!-- <span style="color: rgb(33, 30, 30); position: relative; top:38.5px;right:0px; font-weight: bold;" id="ok">Register Here!</span><a href="webpage.html" id="as" style="position: relative; left:10px;top:38px; text-decoration: none; color: rgb(0, 21, 255);cursor: pointer;">Click Here!</a>
+
+         <span style="color: rgb(33, 30, 30); position: relative; top:38.5px;right:0px; font-weight: bold;" id="ok">Register Here!</span><a href="webpage.html" id="as" style="position: relative; left:10px;top:38px; text-decoration: none; color: rgb(0, 21, 255);cursor: pointer;">Click Here!</a> -->
+         <span style="color: rgb(33, 30, 30); position: relative; top:38.5px;right:0px; font-weight: bold;" id="ok">Register Here!</span><a href="http://localhost:8000/signup/" id="as" style="position: relative; left:10px;top:38px; text-decoration: none; color: rgb(0, 21, 255);cursor: pointer;">Click Here!</a>
+         <a href="http://127.0.0.1:5500/template/landing.html"<button id="ac" style="padding: 14px; position: relative; top:60px; left: 90px; cursor: pointer;">LOGIN</button></a>
+        </div>
+        </div>
+   </center>
+   <style>
+
+*{
+
+
+
+    
+    margin:0;
+    padding:0;
+}
+body{
+    width:100%;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: none;
+    height: 100%;
+    
+    
+}
+#ok::selection{
+   background: none;
+}
+#as::selection{
+  background: none;
+}
+
+.container{
+   position:relative;
+   top:120px;
+   border: 4px solid rgba(222, 220, 230, 0.656);
+   width: 200px;
+   padding:80px;
+   border-top-right-radius: 60px;
+   border-bottom-left-radius: 60px;
+   outline: none;
+   box-shadow: 4px 4px rgba(64, 218, 245, 0.659),6px 6px rgb(232, 91, 232);
+   background-color: rgba(222, 222, 222, 0.419);
+}
+
+#ac{
+    background:rgb(0, 255, 251);
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+#ac:hover{
+    /* color: rgb(19, 153, 243);
+    transition: ease-in-out 1s; */
+    scale:1.1;
+}
+
+#ab input{
+outline: none;
+border: 3px solid rgb(227, 234, 234);
+color: rgb(15, 17, 17);
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+#ab input:focus{
+    border-color: rgb(15, 236, 240);
+    transition: ease-in-out 1s;
+    
+}
+h3{
+    position: relative;
+    bottom:30px;
+    left:3px;
+    font-size: 22px;
+    color: azure;
+    cursor: pointer;
+}
+#s{
+    position: relative;
+    top: 10px;
+    right:90px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: azure;
+    cursor: pointer;
+}
+#s2{
+    position: relative;
+    top: -8px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    left:5px;
+    color: azure;
+    cursor: pointer;
+
+}
+#s3{
+    position: relative;
+    bottom:25px;
+    left:100px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: azure;
+}
+
+
+   </style>
+
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 
+<html>
+    {% load static%}
+    <head>
+        <title>Signup Page</title>
+        <style>
+            body{
+                font-family: Arial, Helvetica, sans-serif;
+                background-image: url("gietbackground.jpeg");
+            }
+            button{
+                background-color: #4CAF50;
+                width: 25%;
+                padding: 15px;
+                color: black;
+                border: none;
+                float: center;
+                font-size: 15px;
+            }
+            label{
+                font-size: 20px;
+            }
+            form{
+                border: 3px solid #f1f1f1;
+            }
+            input[type=email],input[type=password]{
+                width: 50%;
+                font-size: 15px;
+                margin: 8px 0px;
+                padding: 12px 20px;
+                display: inline-block;
+                border: 2px solid green;
+                box-sizing: border-box;
+            }
+            button:hover{
+                opacity:0.7;
+
+            }
+            .container{
+                padding: 50px;
+                background-color: rgba(179, 179, 179, 0.315);
+            
+            }
+            .imgcontainer {
+                text-align: center;
+                margin: 24px 0 12px 0;
+            }
+              
+            img.avatar {
+                width: 20%;
+                border-radius: 50%;
+            } 
+            #ad{
+                background-repeat: no-repeat;
+                background-size: cover;
+            } 
+        </style>
+    </head>
+    <body style="background-image: url('{%static 'gietbackground.jpeg'%}');" id="ad">
+        <center><h1>WELCOME TO ARTISCO</h1></center>
+        <form action="#" method="post">
+            {% csrf_token %}
+            {% load static %}
+            <center><div class="container">
+                <div class="imgcontainer">
+                    <img src="{% static 'Artisco2.png' %}" alt="Avatar" class="avatar">
+                </div>
+                <label for ='email'><b>UserEmail :  </b></label>
+                <input type="email" placeholder="Enter email" name="email" float="right"  required><br>  
+                <label for='password'><b>Password : </b></label>
+                <input type="password" placeholder="Enter Password" name="password" required><br>  
+                <button type="submit"><b>Login</b></button><br>     
+                Don't have account? <a href="http://localhost:8000/signup/" style="
+                text-decoration: none;"> Register </a>
+            </div></center>
+        </form>
+    </body>
+</html> -->

@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARTISCO</title>
+    <link rel="stylesheet" href="landing.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css" integrity="sha384-QYIZto+st3yW+o8+5OHfT6S482Zsvz2WfOzpFSXMF9zqeLcFV0/wlZpMtyFcZALm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        *{
+
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+body{
+font-family: 'Poppins', sans-serif;
+background: radial-gradient(#fff,#ffd6df);
+}
+.navbar{
+display: flex;
+align-items: center;
+padding: 20px;
+}
+nav{
+flex: 1;
+text-align: right;
+}
+nav ul {
+display: inline-block;
+list-style-type:none;
+
+}
+nav ul li {
+
+display: inline-block;
+margin-right:20px ;
+}
+a {
+text-decoration:none  ;
+color: #555;
+}
+p{
+color: #555;
+}
+/*.container {
+margin width: 1300px;
+margin : auto;
+padding-left : 25px;
+padding-right:25px;
+}*/
+.row{
+display: flex; 
+align-items: center;
+flex-wrap: wrap;
+justify-content: space-around;
+}
+.col-2{
+flex-basis: 50%;
+min-width:300px;
+
+}
+.col-2 img{
+max-width: 100%;
+padding: 50px 0;
+}
+.col-2 h1{
+font-size: 50px;
+line-height:60px;
+margin:25px 0;
+}
+.btn{
+display: inline-block;
+background: #ff523b;
+color: #fff;
+padding: 8px 30px;
+margin: 30px 0;
+border-radius: 30px;
+transition: background 0.5s;
+}
+.btn:hover{ background:#563434 ;
+}
+
+.header .row{
+margin-top: 70px;
+
+
+}
+.categories{
+margin:70px 0;
+
+}
+.col-3{
+flex-basis:30%;
+min-width:250px;
+margin-bottom: 30px;
+
+
+}
+.col-3 img{
+width: 100%;
+}
+.small-container{
+
+max-width: 1080px;
+margin: auto;
+padding-left: 25px;
+padding-right: 25px;
+}
+.col-4{
+flex-basis: 25%;
+padding: 10;
+min-width: 200px;
+margin-bottom: 50px;
+transition:transform 0.5s ;
+}
+.col-4 img{
+width: 100%;
+}
+.checked{
+color: gold;
+}
+.title{
+text-align: center;
+margin: 0 auto 80px;
+position: relative;
+line-height: 60px;
+color:#555;
+}
+.title::after{
+content: '';
+background: #ff523b ;
+width:80px;
+height: 5px;
+border-radius: 5px;
+position: absolute;
+bottom:0;
+left: 50%;
+transform:translateX(-50%) ;
+
+
+}
+h4{
+color: #555;
+font-weight: normal;
+
+}
+.col-4 p{
+font-size: 14px;
+
+}
+.rating .fa{
+
+color:#ff523b ;
+}
+.col-4:hover{
+transform: translateY(-5px);
+}
+/*---testimonial----*/
+.testimonial{
+padding-top: 100px;
+
+}
+.testimonial col-3{
+text-align: center;
+padding: 40px 20px;
+box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.1);
+cursor: pointer;
+transition: transform 0.5s;
+
+}
+.testimonial .col-3 img{
+width: 50px;
+margin-top: 20px;
+border-radius: 50%;
+
+}
+.testimonial .col-3:hover{
+transform: translateY(-10px);
+
+
+}
+.fa.fa-quote-left{
+font-size: 34px;
+color: #ff523b;
+
+}
+.col-3 p{
+font-size: 12px;
+margin: 12px 0;
+color: #777;
+
+}
+.testimonial .col-3 h3{
+font-weight: 600;
+color: #555;
+font-size: 16px;
+}
+
+/*--footer---*/
+.footer{
+background: #000;
+color: #8a8a8a;
+font-size: 14px;
+padding: 60px 0 20px ;
+
+
+}
+.footer p{
+color: #8a8a8a;
+
+}
+.footer h3{
+color: #fff;
+margin-bottom: 20px;
+
+
+}
+.footer-col-1, .footer-col-2, .footer-col-3, .footer-col-4{
+min-height: 250px;
+margin-bottom: 20px;
+
+}
+.footer-col-1{
+flex-basis:30% ;
+
+}
+.footer-col-2{
+flex: 1;
+text-align: center;
+
+
+}
+.img1{
+    width: 40px;
+    height: 30px;
+}
+.footer-col-2 img{
+width: 180px;
+margin-bottom:20px ;
+
+}
+.footer-col-3, .footer-col-4{
+flex-basis: 12%;
+text-align: center;
+
+}
+ul{
+list-style-type: none;
+
+
+}
+.app-logo{
+margin-top:20px ;
+}
+.app-logo img{
+width: 140px;
+}
+.footer hr{
+border: none;
+background: #b5b5b5; 
+height: 1px;
+margin: 20px 0;
+
+}
+.copyright{
+text-align: center;
+}
+    </style>
+</head>
+<body>
+    <div class="header">
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <!-- <img src="{% static 'f1.png' %}" alt="gietlogo" width="49%" style="position: relative; bottom: 50px;" id="ok"> -->
+                <img src="f1 copy.png" alt="logo" width="160px" style="position: relative; bottom: 20px;">
+    
+            </div>
+            <nav>
+                <ul>
+                    <!-- <li><a href="">HOME</a></li> -->
+                    <li><a href="">WEEKLY CONTESTS</a></li>
+                    <li><a href="">BLOG</a></li>
+                    <li><a href="">CLUBS</a></li>
+                    <!-- <li><a href="">UPLOAD</a></li> -->
+                    <li><a href="webpage.html">ABOUT</a></li>
+                    <!-- <li><a href="">CONTACT</a></li> -->
+                    <!-- <li><a href="login_page.html">ACCOUNT</a></li> -->
+                </ul>
+            </nav>
+            <img src="cart.png" alt="icon" width="30px" height="30px">
+
+        </div>
+        <div class="row">
+            <div class="col-2">
+                <h1>TASTE THE REAL FLAVOUR OF YOUR ART</h1>
+                <!-- <p><h5>CULTURAL INTERMEDIATE CLUB FOR GIET UNIVERSITY</h5></p> -->
+            </div>
+            <!-- <div class="col-2">
+                <img src="artisco copy.jpg" alt="logo " width="30px" height="30px" >
+
+            </div> -->
+        </div>
+        </div>
+    </div>
+    <!----categories-->
+    <div class="categories">
+        <div class="small-container">
+            <div class="row">
+                <div class="col-3">
+                    <img  style="width: 300px; height: 200px;" src=" vintage-landscape-with-gondolas_1160-162.jpg" alt="art">
+                </div>
+                <div class="col-3">
+                    <img style="width: 300px; height: 200px;" src="photo-1579783900882-c0d3dad7b119.jpeg.jpg" alt="art">
+                </div>
+                <div class="col-3">
+                    <img style="width: 300px; height: 200px;" src="images.jpeg" alt="art">
+                </div>
+        </div>
+
+        </div>
+        <!--featured prdoucts----->
+        <div class="small-container">
+            <centre><h2 class="title">Featured Arts</h2></centre>
+            <div class="row">
+            <div class="col-4">
+                <img id="img1"  src="Picture1.jpg" alt="product1">
+                <h4>TEXTURED ART </h4>
+                <div class="rating">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+
+                </div>
+                <p> ₹4320.00</p>
+            </div>
+            <!-- <div class="col-4">
+                <img src="images (2).jpeg" alt="product1">
+                <h4>TEXTURED ART </h4>
+                <div class="rating">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+
+                </div>
+                <p> ₹5990.00</p> -->
+            </div>
+            <div class="col-4">
+                <img src="images (1).jpeg" alt="product1">
+                <h4>TEXTURED ART </h4>
+                <div class="rating">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+
+                </div>
+                <p> ₹5120.00</p>
+            </div>
+            <div class="col-4">
+                <img src="images (2).jpeg" alt="product1">
+                <h4>TEXTURED ART </h4>
+                <div class="rating">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+
+                </div>
+                <p> ₹3230.00</p>
+            </div>
+        </div>
+        <!--testimonial-->
+        <div class="testimonial">
+            <div class="small-container">
+                <div class="row">
+                    <div class="col-3">
+                        <i class="fa fa-quote-left"></i>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia temporibus officia earum alias, dolorum soluta excepturi deserunt aspernatur illo laborum aliquam incidunt nisi doloribus possimus, officiis recusandae sapiente voluptatem provident.</p>
+                        <div class="rating">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+        
+                        </div>
+                        <img src="download (1).jpeg" alt="man img" >
+                        <h3>Jean-Antoine Watteau</h3>
+                    </div>
+                    <div class="col-3">
+                        <i class="fa fa-quote-left"></i>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia temporibus officia earum alias, dolorum soluta excepturi deserunt aspernatur illo laborum aliquam incidunt nisi doloribus possimus, officiis recusandae sapiente voluptatem provident.</p>
+                        <div class="rating">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+        
+                        </div>
+                        <img src="download.jpeg" alt="man img" >
+                        <h3>Leonardo da Vinci</h3>
+                    </div>
+                    <div class="col-3">
+                        <i class="fa fa-quote-left"></i>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia temporibus officia earum alias, dolorum soluta excepturi deserunt aspernatur illo laborum aliquam incidunt nisi doloribus possimus, officiis recusandae sapiente voluptatem provident.</p>
+                        <div class="rating">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+        
+                        </div>
+                        <img src="Georges_Seurat_1888.jpg" alt="man img" >
+                        <h3>Georges Seurat</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--footer-->
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="footer">
+                        <h3>Downloads</h3>
+                        <p>Download app for android and ios  mobile</p>
+                        <div class="app-logo">
+                            <img src="play-store.png" alt="play-store">
+                            <img src="app-store.png" alt="app-store">
+                        </div>
+
+
+                    <!-- </div>
+                    <div class="footer-col-2">
+                        <img src="" alt="">
+                        <p>purpose</p>
+                    </div>
+                    <div class="footer-col-3">
+                        <h3>Useful links</h3>
+                        <ul>
+                            <li>Coupons</li>
+                            <li>Blog Post</li>
+                            <li>Return policy</li>
+                            <li>Affiliate</li>
+                        </ul>
+                        
+                     
+
+                </div>
+                <div class="footer-col-3">
+                    <h3>FOLLOW US ON</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Instagram</li>
+                        <li>Youtube</li>
+                        <li>Twitter</li>
+                    </ul>
+                    
+                 
+
+            </div>
+            </div>
+            <hr>
+            <p class="copyright">Copyright 2020 - Artisco</p>
+        </div> -->
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARTISCO </title>
+    <link rel="stylesheet" href='landing.css'>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="header">
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <img src="#" alt="logo" width="125px">
+    
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="">HOME</a></li>
+                    <li><a href="">PRODUCTS</a></li>
+                    <li><a href="">ABOUT</a></li>
+                    <li><a href="">CONTACT</a></li>
+                    <li><a href="">ACCOUNT</a></li>
+                </ul>
+            </nav>
+            <img src="cart.png" alt="icon" width="30px" height="30px">
+
+        </div>
+        <div class="row">
+            <div class="col-2">
+                <h1>TASTE THE REAL FLAVOUR OF YOUR ART</h1>
+                <P>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste dolores harum, nulla eum quam dignissimos dolorem cum porro soluta quia tenetur quidem sed eius animi dicta illum maxime accusamus consectetur.</P>
+                <a href="" class="btn">Explore Now &#8594; </a>
+            </div>
+            <div class="col-2">
+                <img src="#" alt="image">
+
+            </div>
+        </div>
+        </div>
+    </div>
+    <!----categories-->
+    <div class="categories">
+        <div class="small-container">
+            <div class="row">
+                <div class="col-3">
+                    <img src="" alt="art">
+                </div>
+                <div class="col-3">
+                    <img src="" alt="art">
+                </div>
+                <div class="col-3">
+                    <img src="" alt="art">
+                </div>
+        </div>
+
+        </div>
+       
+   
+    
+</body>
+</html> -->
+<div> 
+    
+</div>
